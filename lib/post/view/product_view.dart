@@ -15,6 +15,11 @@ class ProductView extends StatelessWidget {
       },
       onPageBuilder: (BuildContext context, ProductViewModel value) => Scaffold(
         appBar: AppBar(title: Text("mobx practice with fakeStore")),
+        body: ListView.builder(
+          itemBuilder: (context, index) => Card(
+            child: ListTile(title: Text("title")),
+          ),
+        ),
       ),
     );
   }
