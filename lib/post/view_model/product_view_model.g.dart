@@ -1,6 +1,6 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'product_view_mode.dart';
+part of 'product_view_model.dart';
 
 // **************************************************************************
 // StoreGenerator

@@ -4,11 +4,10 @@ import 'package:ruchan_adiguzel_mobx_weekend/post/model/post_model.dart';
 import 'package:ruchan_adiguzel_mobx_weekend/post/service/post_service.dart';
 
 import '../../core/base_model/base_view.dart';
-part 'product_view_mode.g.dart';
+part 'product_view_model.g.dart';
 
 class ProductViewModel = _ProductViewModelBase with _$ProductViewModel;
 
-// ignore: must_be_immutable
 abstract class _ProductViewModelBase with Store, BaseViewModel {
   @observable
   List<ProductModel> productList = [];

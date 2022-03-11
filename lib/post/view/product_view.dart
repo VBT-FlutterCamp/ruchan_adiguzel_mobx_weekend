@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:ruchan_adiguzel_mobx_weekend/core/base_model/base_view_model.dart';
-import 'package:ruchan_adiguzel_mobx_weekend/post/view_model/product_view_mode.dart';
+import 'package:ruchan_adiguzel_mobx_weekend/post/view_model/product_view_model.dart';
 
 class ProductView extends StatelessWidget {
   const ProductView({Key? key}) : super(key: key);
