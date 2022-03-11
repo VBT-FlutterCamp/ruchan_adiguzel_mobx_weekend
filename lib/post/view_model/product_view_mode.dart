@@ -11,7 +11,7 @@ class ProductViewModel = _ProductViewModelBase with _$ProductViewModel;
 // ignore: must_be_immutable
 abstract class _ProductViewModelBase with Store, BaseViewModel {
   @observable
-  List<ProductModel> postList = [];
+  List<ProductModel> productList = [];
   @observable
   bool isLoading = false;
   @action
@@ -20,7 +20,8 @@ abstract class _ProductViewModelBase with Store, BaseViewModel {
     final response = await PostService.instance.dio.get("/products");
     if (response.statusCode == 200) {
       var _temp = response.data;
-      postList = (_temp as List).map((e) => ProductModel.fromJson(e)).toList();
+      productList =
+          (_temp as List).map((e) => ProductModel.fromJson(e)).toList();
       _changeLoading();
     } else {
       _changeLoading();

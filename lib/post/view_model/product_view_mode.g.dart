@@ -9,18 +9,18 @@ part of 'product_view_mode.dart';
 // ignore_for_file: non_constant_identifier_names, unnecessary_brace_in_string_interps, unnecessary_lambdas, prefer_expression_function_bodies, lines_longer_than_80_chars, avoid_as, avoid_annotating_with_dynamic
 
 mixin _$ProductViewModel on _ProductViewModelBase, Store {
-  final _$postListAtom = Atom(name: '_ProductViewModelBase.postList');
+  final _$productListAtom = Atom(name: '_ProductViewModelBase.productList');
 
   @override
-  List<ProductModel> get postList {
-    _$postListAtom.reportRead();
-    return super.postList;
+  List<ProductModel> get productList {
+    _$productListAtom.reportRead();
+    return super.productList;
   }
 
   @override
-  set postList(List<ProductModel> value) {
-    _$postListAtom.reportWrite(value, super.postList, () {
-      super.postList = value;
+  set productList(List<ProductModel> value) {
+    _$productListAtom.reportWrite(value, super.productList, () {
+      super.productList = value;
     });
   }
 
@@ -64,7 +64,7 @@ mixin _$ProductViewModel on _ProductViewModelBase, Store {
   @override
   String toString() {
     return '''
-postList: ${postList},
+productList: ${productList},
 isLoading: ${isLoading}
     ''';
   }
